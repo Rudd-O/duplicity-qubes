@@ -1,5 +1,5 @@
 Qubes OS backend for Duplicity backups
---------------------------------------
+======================================
 
 This file is an extension to Duplicity 0.7.x that allows it
 to back up any files in a Qubes OS dom0 (such as VM images)
@@ -9,9 +9,14 @@ VM of the Qubes OS system.
 Instructions:
 
 1. Install Duplicity on dom0.
-2. Place the file `qubesvmbackend.py` within the directory
+   The usual `sudo qubes-dom0-update duplicity` works well.
+2. Place the file `qubesvmbackend.py` in this repository
+   within the directory
    `/usr/lib64/python2.7/site-packages/duplicity/backends`.
 3. You are ready to back up your system to a VM!
+
+Usage example
+-------------
 
 Duplicity can be used as the following example shows:
 
